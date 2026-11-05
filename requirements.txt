@@ -107,6 +107,7 @@ scipy==1.17.1
 semantic-version==2.10.0
 setuptools==84.2.1
 shellingham==1.5.4
+sounddevice==0.5.6
 soundfile==0.14.0
 soxr==1.1.0
 spacy-pkuseg==1.0.2
