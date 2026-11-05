@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "chatter"
+version = "0.1.0"
+description = "Chatter TTS Client and Server"
+requires-python = ">=3.9"
+dependencies = [
+    "fastapi",
+    "python-multipart",
+    "uvicorn",
+    "torchaudio",
+    "requests",
+    "soundfile",
+    "sounddevice",
+    # Add 'chatterbox' here if it is an external package available via pip
+]
+
+[project.scripts]
+server-chatter = "chatter.__main__:main"
+client-chatter = "chatter.client:main"
+
